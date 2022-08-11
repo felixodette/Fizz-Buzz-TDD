@@ -30,7 +30,7 @@ describe 'Solver' do
     end
 
     it 'Should return "buzz" when N is divisible by 5' do
-      expect(@solver.fizzbuss(5)).to eq('buzz')
+      expect(@solver.fizzbuzz(5)).to eq('buzz')
     end
 
     it 'Should return "fizz" when N is divisible by 3' do
