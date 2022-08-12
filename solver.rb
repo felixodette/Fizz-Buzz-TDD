@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Solver
   def factorial(num)
     return 'Exception: Negative numbers don\'t have factorials.' if num.negative?
