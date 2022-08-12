@@ -1,6 +1,6 @@
-require 'rspec'
+require 'rspec' # rubocop:disable Style/FrozenStringLiteralComment
 require_relative '../solver'
-
+# rubocop:disable Metrics/BlockLength
 describe 'Solver' do
   before :each do
     @solver = Solver.new
@@ -37,4 +37,17 @@ describe 'Solver' do
       expect(@solver.fizzbuzz(3)).to eq('fizz')
     end
   end
+
+  context '#reverse method' do
+    it 'Should take one argument string word and returns word in reverse' do
+      reversed_word = @solver.reverse('hello')
+      expect(reversed_word).to match('olleh')
+    end
+
+    it 'Should return an empty string when word is empty' do
+      reversed_word = @solver.reverse('')
+      expect(reversed_word).to match('')
+    end
+  end
 end
+# rubocop:enable Metrics/BlockLength
