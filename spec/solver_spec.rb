@@ -1,6 +1,6 @@
-require 'rspec' # rubocop:disable Style/FrozenStringLiteralComment
+require 'rspec'
 require_relative '../solver'
-# rubocop:disable Metrics/BlockLength
+
 describe 'Solver' do
   before :each do
     @solver = Solver.new
@@ -50,4 +50,4 @@ describe 'Solver' do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength
+
